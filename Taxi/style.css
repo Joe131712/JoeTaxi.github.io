@@ -1,0 +1,722 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    background: rgb(52, 61, 63);
+    color: rgba(0, 0, 0, 0.248);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+.header {
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-align: right;
+    padding-right: 20px;
+    animation: fadeIn 5s;
+}
+
+.header2 {
+    background-color: dodgerblue;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0px 10px 10px black;
+}
+
+.card {
+    width: 350px;
+    margin: 0px auto;
+    background-color: rgba(184, 202, 205, 1.00);
+    box-shadow: 0px 10px 10px black;
+   
+}
+
+.card-image {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.conventionné {
+    width: 10px;
+    height: 10px;
+}
+.card-body {
+    text-align: center;
+    position: relative;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+.card-image img {
+    width: 100%;
+    height: 265px;
+    
+    transition-property: filter width;
+    transition-duration: .3s;
+    transition-timing-function: ease;
+    border-bottom: 10px solid dodgerblue;
+}
+
+.card-title, .card-expert {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.card-expert {
+    text-align: start;
+    line-height: 1.7rem;
+    color: #000000;
+}
+
+.card-expert span {
+    text-decoration: underline;
+    font-weight: bold;
+    text-decoration-color: dodgerblue;
+}
+
+.square {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #3acfd5 0%, goldenrod 100%) 1 / 25px;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    width: 250px;
+    height: 250px;
+    transform: rotate(45deg);
+    animation: yourAnimation1 1 ease 5s;
+    z-index: 2;
+}
+
+.square2 {
+    border-width: 4px;
+    border-style: solid;
+    border-image: linear-gradient(to right, goldenrod 0%, rgb(165, 32, 218) 100%) 1 / 25px;
+    position: absolute;
+    top: 28%;
+    left: 20%;
+    width: 250px;
+    height: 250px;
+    transform: rotate(45deg);
+    animation: yourAnimation ease 5s;
+    z-index: 2;
+}
+
+/*@keyframes roule {
+    from {
+        transform: rotate(-760deg);}
+    to {
+        transform: rotate(45deg);}
+}
+
+@keyframes roul1 {
+    from {
+        transform: skewX(800deg)}
+    to {
+        transform: skewX(45deg);}
+}*/
+
+@keyframes yourAnimation{
+    0% {
+        opacity: 0;
+        transform:  scale(10) translate(100%);
+    }
+    100% {
+    }
+}
+
+@keyframes yourAnimation1{
+    0% {
+        opacity: 0;
+        transform:  scale(-10) translate(100%);
+    }
+    100% {
+    }
+}
+
+
+.logo img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -17px;
+    left: 0;
+    margin: 20px;
+}
+
+.logo p {
+    position: absolute;
+    color: dodgerblue;
+    top: 35px;
+    right: 30px;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.p-header {
+    position: relative;
+    font-size:  20px;
+    line-height: 1.9rem;
+    animation: slide 5s 1;
+    z-index: -2;
+}
+
+@keyframes slide {
+    from {translate: -500px;
+        transform: translateY(-400px);
+    opacity: 0;}
+    to {translate: 0;
+        transform: translateY(0);
+    opacity: 1;}
+}
+
+.p-header1 {
+    position: relative;
+    font-size:  20px;
+    line-height: 1.9rem;
+    animation: slide 5s 1;
+
+}
+
+@keyframes slide1 {
+    from {translate: -500px;
+        transform: translateY(-400px);
+    opacity: 0;}
+    to {translate: 0;
+        transform: translateY(0);
+    opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {
+        transform: translateY(-80px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.navbar {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    width: 100%;
+    align-items: center;
+}
+
+.navbar1 {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar1:hover {
+    color: white;
+    background: royalblue;
+    box-shadow: 0px 0px 20px royalblue;
+}
+
+.navbar2 {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar2:hover {
+    color: white;
+    background: teal;
+    box-shadow: 0px 0px 20px teal;
+}
+
+.navbar3 {
+    background: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+.navbar3:hover {
+    color: white;
+    background: rgb(194, 149, 16);
+    box-shadow: 0px 0px 20px rgb(194, 149, 16);
+}
+
+.voiture {
+    
+    animation: slide1 5s 1;
+    z-index: -2;
+}
+
+@keyframes slide1 {
+    from {translate: 500px;
+        transform: translateY(-400px);
+    opacity: 0;}
+    to {translate: 0;
+        transform: translateY(0);
+    opacity: 1;}
+}
+
+.logo2 img {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin: auto;
+    animation: slidein 5s 1;
+    z-index: 3;
+}
+
+@keyframes slidein {
+    from {transform: translateX(500px);}
+    to {transform: translateX(0);}
+}
+
+.welcome {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    color: rgb(0, 0, 0);
+    font-size: 90px;
+    font-weight: 900;
+    z-index: 3;
+}
+
+.p-welcome {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    margin-top: 0;
+    z-index: 4;
+}
+
+hr {
+    border: 2px solid goldenrod;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 50%;
+}
+
+.presentation {
+    position: relative;
+    text-align: center;
+    margin: 10px;
+}
+
+.form-reservation p span {
+    background-color: dodgerblue;
+    font-size: large;
+    font-weight: 700;
+}
+
+.tarifs {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: dodgerblue;
+    font-size: xx-large;
+    font-weight: 800;
+    margin: auto;
+    width: 80%;
+}
+
+::placeholder {
+    color: black;
+}
+
+#date {
+    color: black;
+}
+.form-reservation {
+    position: relative;
+}
+
+.container {
+    position: relative;
+}
+
+
+
+.block-img img {
+    width: 100%;
+    flex: none;
+    margin: auto;
+    animation: slide1 5s 1;
+}
+
+@keyframes slide {
+    from {translate: 500px;
+        transform: translateY(400px);
+    opacity: 0;}
+    to {translate: 0;
+        transform: translateY(0);
+    opacity: 1;}
+}
+
+.img-presentation img{
+    width: 300px;
+    height: 300px;
+    margin: 10px;
+}
+
+.form {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-top: 40px;
+    height: auto;
+    padding: 0 10px;
+    z-index: 5;
+}
+
+.form-reservation img {
+    width: 300px;
+    height: 300px;
+    margin: 0 10px 20px 10px;
+}
+
+.form-reservation {
+    text-align: center;
+    margin: 10px;
+}
+#choix {
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 253, 253, 0.271);
+    border: 1px solid rgba(0, 0, 0, 0.184);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+option {
+    background: rgba(224, 208, 239, 0.912);
+    color: black;
+}
+
+.form input{
+    display: block;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 253, 253, 0.271);
+    border: 1px solid rgba(0, 0, 0, 0.184);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.form input:focus {
+    background: rgba(224, 208, 239, 0.912);
+    color: black;
+    border-radius: none;
+    outline: none;
+    box-shadow: 0px 0px 7px black;
+}
+
+.form input:last-child {
+    margin-bottom: 20px;
+}
+
+.form .number1 {
+    width: 50%;
+    float: left;
+    margin-right: 0;
+}
+
+.form .number2 {
+    width: 50%;
+    margin-left: 0;
+}
+
+#style {
+    background-color: red;
+}
+
+.form .submit {
+    background: black;
+    color: rgba(224, 208, 239, 0.912);
+    border: none;
+    outline: none;
+    margin-top: 0;
+}
+
+.form .submit:hover {
+    background: rgb(93, 93, 231);
+    color: black;
+    box-shadow: 0px 5px 5px rgba(93, 93, 231);
+}
+
+iframe {
+    display: block;
+    width: 100%;
+    height: 300px;
+    justify-content: center;
+    align-content: center;
+    margin: 40px auto;
+}
+
+footer {
+    background: black;
+}
+
+
+
+.footer1 {
+    color: dodgerblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer1 h3 {
+    margin-bottom: 0;
+}
+
+.footer1 p {
+    margin-top: 0;
+}
+
+.footer-img  {
+    filter: invert(100%);
+}
+
+.footer1 img {
+    color: dodgerblue;
+    width: 50px;
+    height: 50px;
+    margin: 0 10px 0 10px;
+}
+
+.footer3 a{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer3 .p-footer3 {
+    margin-bottom: 0;
+}
+
+.p-footer3 {
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.p-footer4 {
+    font-weight: bold;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 0;
+}
+
+.reseaux .logo-reseaux {
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+.reseaux {
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    margin: auto;
+}
+
+.reseaux {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+}
+
+@media only screen and (min-width: 600px) {
+    .logo2 img {
+        width: 500px;
+        height: 300px;
+        animation: slidein 5s 1;
+    }
+
+    @keyframes slidein {
+        from {transform: translateX(800px);}
+        to {transform: translateX(0);}
+    }
+
+    .p-img-presentation {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        margin: 0 auto 40px;
+    }
+
+    .img-presentation {
+        margin-top: 0;
+    }
+
+    .img-presentation img {
+        width: 550px;
+        height: 450px;
+        margin: 20px auto 40px;
+        border: none;
+        border-radius: 0;
+        float: none;
+    }
+
+    .block-img img {
+        width: 550px;
+        height: 450px;
+        margin: 20px auto 40px;
+        border: none;
+        border-radius: 0;
+        float: none;
+    }
+    
+    .square {
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(to right, #3acfd5 0%, goldenrod 100%) 1 / 25px;
+        position: absolute;
+        top: 15%;
+        left: 29%;
+        width: 250px;
+        height: 250px;
+        transform: rotate(45deg);
+        animation: yourAnimation1 1 ease 5s;
+        z-index: 2;
+    }
+    
+    .square2 {
+        border-width: 4px;
+        border-style: solid;
+        border-image: linear-gradient(to right, goldenrod 0%, rgb(165, 32, 218) 100%) 1 / 25px;
+        position: absolute;
+        top: 28%;
+        left: 29%;
+        width: 250px;
+        height: 250px;
+        transform: rotate(45deg);
+        animation: yourAnimation ease 5s;
+        z-index: 2;
+    }
+
+    .logo2 img {
+        position: relative;
+        top: 35px;
+    }
+
+    #form {
+        width: 400px;
+        font-weight: bold;
+    }
+
+    #reservation, #presentation {
+        overflow: hidden;
+    }
+    
+    @media only screen and (min-width: 800px) {
+        .square {
+            border-width: 4px;
+            border-style: solid;
+            border-image: linear-gradient(to right, #3acfd5 0%, goldenrod 100%) 1 / 25px;
+            position: absolute;
+            top: 15%;
+            left: 42%;
+            width: 250px;
+            height: 250px;
+            transform: rotate(45deg);
+            animation: yourAnimation1 1 ease 5s;
+            z-index: 2;
+        }
+        
+        .square2 {
+            border-width: 4px;
+            border-style: solid;
+            border-image: linear-gradient(to right, goldenrod 0%, rgb(165, 32, 218) 100%) 1 / 25px;
+            position: absolute;
+            top: 28%;
+            left: 42%;
+            width: 250px;
+            height: 250px;
+            transform: rotate(45deg);
+            animation: yourAnimation ease 5s;
+            z-index: 2;
+        }
+
+        .img-presentation img {
+            width: 50%;
+            float: right;
+            height: auto;
+        }
+
+        .p-img-presentation {
+            width: 50%;
+            float: left;
+        }
+
+        .block-img img {
+            width: 50%;
+            height: 320px;
+            float: left;
+        }
+
+        #form {
+            position: relative;
+            float: right;
+            width: 50%;
+            margin-top: 69px;
+            margin-right: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 0px 0px black,
+            0px 0px 0px grey;
+
+            z-index: 5;
+        }
+
+        #presentation {
+            height: auto;
+            line-height: 1.5rem;
+            align-items: center;
+        }
+
+        hr {
+            margin-top: 20px;
+        }
+
+        .footer-img {
+            filter: invert(100%);
+        }
+        .card {
+            width: 40%;
+            float: inline-start;
+            
+            margin: 50px;
+        }
+        iframe {
+            box-shadow: none;
+            height: 400px;
+            border-radius: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        hr {
+            display: none;
+        }
+    }
+    
+}
