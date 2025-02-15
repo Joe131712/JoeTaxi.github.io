@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <title>JoTaxi94</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">
+        <img src="./img/logo.png" alt="Logo"></a>
+        <h1>JoTaxi94</h1>
+        <p>Service de taxi</p>
+        </div>
+    </header>
+    <nav class="navbar">
+            <a href="#presentation" class="navbar1">Presentation</a>
+            <a href="#reservation" class="navbar2">Reservation</a>
+            <a href="#contact" class="navbar3">Contact</a>
+    </nav>
+    <header class="header2" id="header2">
+        <div class="dynamic-images"></div>
+        <form method="post" id="form" action="reponse.php" class="form">
+            <input type="text" id="fname" name="fname" placeholder="Nom">
+            <span id="fname-error" class="error-message"></span>
+            <input type="email" id="email" name="email" placeholder="E-mail">
+            <span id="email-error" class="error-message"></span>
+            <input type="tel" id="telephone" name="tel" placeholder="Téléphone">
+            <span id="telephone-error" class="error-message"></span>
+            <input type="datetime-local" id="date" name="datetime" value="Date et Heure">
+            <span id="date-error" class="error-message"></span>
+            <input type="text" id="departure" name="adresse1" placeholder="Adresse de départ">
+            <span id="departure-error" class="error-message"></span>
+            <input type="text" id="arrived" name="adresse" placeholder="Adresse d'arrivée">
+            <span id="arrived-error" class="error-message"></span>
+            <input type="number" name="number" placeholder="Nombre de personnes" id="number1" class="number1">
+            <input type="number" name="number" placeholder="Nombre de bagages" id="number2" class="number2">
+            <input type="submit" value="Réserver" id="submit" name="submit" class="submit">
+        </form>
+        <div class="square"></div>
+        <div class="square2"></div>
+        <div class="logo2">
+        <img src="./img/voiture.png" alt="Voiture">
+        <h1 class="welcome">welcome</h1>
+        <p class="p-welcome">Reserver votre taxi en toutes sécurité</p>
+        </div>
+    </header>
+    <hr>
+    <div class="container">
+        <div class="circle"></div>
+        <div class="circle2"></div>
+    <div class="card" id="presentation">
+        <div class="card-image">
+            <img src="./img/inside-voiture.jpg" alt="Voiture">
+            <div class="card-body">
+                <div class="card-title">
+                    <h2>Présentation</h2>
+                </div>
+                <div class="card-expert">
+                    <p>
+                        JoTaxi94 - Votre partenaire de confiance pour tous vos déplacements.
+       
+Pourquoi choisir JoTaxi94 ?
+  
+Ponctualité garantie : Nous comprenons l’importance de votre temps et veillons à toujours respecter vos horaires.
+<br>
+Confort et sécurité : Nos véhicules modernes et bien entretenus vous assurent un trajet agréable en toute sérénité.
+<br>
+Disponibilité : JoTaxi94 est à votre service 24h/24 et 7j/7, pour vous accompagner à tout moment, où que vous soyez.
+<br>
+Tarifs compétitifs : Des prix clairs et sans surprise, pour une expérience en toute transparence.
+<br>
+Avec JoTaxi94, chaque trajet devient une expérience agréable et personnalisée. Contactez-nous dès aujourd’hui pour réserver votre course et profitez d’un service qui place votre satisfaction au cœur de ses priorités.
+
+JoTaxi94 - Bien plus qu’un simple taxi, une expérience sur mesure.
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+    <!--<div class="presentation" id="presentation">
+        <div class="img-presentation">
+            <div class="p-img-presentation">
+        <h2>Présentation</h2>
+        <p class="p-header">
+            JoTaxi94 - Votre partenaire de confiance pour tous vos déplacements.
+        </p>
+        <p class="p-header">
+Pourquoi choisir JoTaxi94 ?
+        </p>
+<p class="p-header">
+Ponctualité garantie : Nous comprenons l’importance de votre temps et veillons à toujours respecter vos horaires.
+<br>
+Confort et sécurité : Nos véhicules modernes et bien entretenus vous assurent un trajet agréable en toute sérénité.
+<br>
+Disponibilité : JoTaxi94 est à votre service 24h/24 et 7j/7, pour vous accompagner à tout moment, où que vous soyez.
+<br>
+Tarifs compétitifs : Des prix clairs et sans surprise, pour une expérience en toute transparence.
+<br>
+Avec JoTaxi94, chaque trajet devient une expérience agréable et personnalisée. Contactez-nous dès aujourd’hui pour réserver votre course et profitez d’un service qui place votre satisfaction au cœur de ses priorités.
+
+JoTaxi94 - Bien plus qu’un simple taxi, une expérience sur mesure.
+        </p>
+            </div>
+        <img class="voiture" src="./img/inside-voiture.jpg" alt="Voiture">
+        </div>
+    </div>-->
+    <hr>
+    <!--<div class="reservation" id="reservation">
+        <div class="form-reservation">
+        <h2>Réservation</h2>
+        <p class="p-header1">
+            Réservez facilement votre trajet avec JoTaxi94
+        </p>
+            <p class="p-header1">
+            Chez JoTaxi94, nous simplifions vos déplacements grâce à un système de réservation rapide et efficace. Que ce soit pour un départ ou une arrivée, nous sommes à votre disposition pour vous transporter dans les meilleures conditions.
+            </p>
+            <p class="p-header1">
+            Forfaits aéroport - Déplacements en toute sérénité
+            Profitez de nos forfaits transparents et compétitifs pour vos trajets vers les principaux aéroports de la région parisienne :
+            </p>
+            <p class="p-header1">
+            Aéroport Roissy-Charles-de-Gaulle (CDG) : Un service fiable pour vos départs matinaux ou vos retours tardifs.
+            Aéroport Paris-Orly (ORY) : Un trajet fluide et confortable, adapté à vos horaires de vol.
+            Aéroport Beauvais-Tillé (BVA) : Une solution économique pour vos liaisons avec les vols low-cost.
+            </p>
+            <p class="p-header1">
+            Nos avantages pour vos trajets aéroport :
+            </p>
+            <p class="p-header1">
+            Forfaits fixes et sans surprise : Des tarifs prédéfinis pour un budget maîtrisé.
+            </p>
+            <p class="p-header1">
+            Assistance avec vos bagages : Nous vous aidons pour un embarquement ou un débarquement sans stress.
+            Ponctualité garantie : Nous surveillons les horaires des vols en temps réel pour ajuster notre arrivée à votre terminal.
+            Confort optimal : Des véhicules modernes et spacieux pour vous assurer un trajet agréable.
+            Réservez en quelques clics !
+            </p>
+            <p class="p-header1">
+            Forfait aéroport au départ ou arivée de Paris :
+            <br>
+            <br>
+            <span>
+            
+            Roissy CDG 56€ (rive droite) ou 65€ (rive gauche)
+            
+            Orly 36€ (rive gauche) ou 44€ (rive droite)
+            </span>
+            <p class="p-header1">
+            Contactez-nous dès maintenant par téléphone ou via notre formulaire en ligne pour réserver votre trajet. Avec JoTaxi94, voyager devient simple, pratique et sans stress.
+            
+            JoTaxi94 - Vos trajets aéroport, notre priorité.</p>
+            <div class="block-img">
+        <img src="./img/reservation.jpg" alt="Reservation">
+    </div>
+        </div>-->
+        <div class="card" id="reservation">
+            <div class="card-image">
+                <img src="./img/reservation.jpg" alt="reservation">
+                <div class="card-body">
+                    <div class="card-title">
+                        <h2>Réservation</h2>
+                    </div>
+                    <div class="card-expert">
+                        <p>
+                            Réservez facilement votre trajet avec JoTaxi94
+                        
+                            Chez JoTaxi94, nous simplifions vos déplacements grâce à un système de réservation rapide et efficace. Que ce soit pour un départ ou une arrivée, nous sommes à votre disposition pour vous transporter dans les meilleures conditions.
+                            
+                            Forfaits aéroport - Déplacements en toute sérénité
+                            Profitez de nos forfaits transparents et compétitifs pour vos trajets vers les principaux aéroports de la région parisienne :
+                            
+                            Aéroport Roissy-Charles-de-Gaulle (CDG) : Un service fiable pour vos départs matinaux ou vos retours tardifs.
+                            Aéroport Paris-Orly (ORY) : Un trajet fluide et confortable, adapté à vos horaires de vol.
+                            Aéroport Beauvais-Tillé (BVA) : Une solution économique pour vos liaisons avec les vols low-cost.
+                           
+                            Nos avantages pour vos trajets aéroport :
+                           
+                            Forfaits fixes et sans surprise : Des tarifs prédéfinis pour un budget maîtrisé.
+                            
+                            Assistance avec vos bagages : Nous vous aidons pour un embarquement ou un débarquement sans stress.
+                            Ponctualité garantie : Nous surveillons les horaires des vols en temps réel pour ajuster notre arrivée à votre terminal.
+                            Confort optimal : Des véhicules modernes et spacieux pour vous assurer un trajet agréable.
+                            Réservez en quelques clics !
+                            
+                            Forfait aéroport au départ ou arivée de Paris :
+                            <br>
+                            <br>
+                            <span>
+                            
+                            Roissy CDG 56€ (rive droite) ou 65€ (rive gauche)
+                            
+                            Orly 36€ (rive gauche) ou 44€ (rive droite)
+                            </span>
+                            <br>
+                            <br>
+                            Contactez-nous dès maintenant par téléphone ou via notre formulaire en ligne pour réserver votre trajet. Avec JoTaxi94, voyager devient simple, pratique et sans stress.
+                            
+                            JoTaxi94 - Vos trajets aéroport, notre priorité.</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10511.009560036198!2d2.3652496690011517!3d48.805704241197596!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e673a6caeee451%3A0x90d749f513910164!2s201%20Bd%20de%20Stalingrad%2C%2094400%20Vitry-sur-Seine!5e0!3m2!1sfr!2sfr!4v1735386793818!5m2!1sfr!2sfr" width="400" height="300" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <hr>
+        <footer>
+            <div class="contact" id="contact">
+                <div class="footer1">
+                    <h3>JoTaxi94</h3>
+                    <p>Service de taxi</p>
+                    <img class="footer-img" src="./img/logo.png" alt="Logo">
+                </div>
+                <div class="footer3">
+                    <p class="p-footer3">201 Boulevard de Stalingrad</p>
+                    <p class="p-footer4">94400 Vitry-sur-Seine</p>
+                    <a href="mailto:joe.taxi94@gmail.com">joe.taxi94@gmail.com</a>
+                    <a href="tel:0651652325">0651652325</a>
+                </div>
+                <div class="reseaux">
+                    <a href="https://www.facebook.com/JoTaxi94400/" target="_blank"><img src="./img/facebook.png" class="logo-reseaux" alt="Facebook"></a>
+                    <a href="https://x.com/JoeMars94" target="_blank"><img src="./img/twitter.png" class="logo-reseaux" alt="Twitter"></a>
+                    <a href="https://wa.me/651652325" target="_blank"><img src="./img/whatsapp.png" class="logo-reseaux" alt="WhatsApp"></a>
+                </div>
+        </footer>
+ 
+</body>
+</html>
